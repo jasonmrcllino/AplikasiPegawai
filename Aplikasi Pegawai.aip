@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.7" version="22.7" Modules="enterprise" RootPath="." Language="id" Id="{82124AC3-22DB-46A3-9FA4-6AEBB5348152}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Basis data penginstal ini berisi logika dan data yang dibutuhkan untuk menginstal  [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="Universitas Pamulang"/>
+    <ROW Property="ProductCode" Value="1057:{2AA1D4B3-4DE1-428E-8CB6-6900092A6712} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Aplikasi Pegawai"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{A1B8DE92-586C-4144-BEDB-90A9EEC0430D}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="AplikasiPegawaiSetupFiles_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="APLIKA~2|Aplikasi Pegawai-SetupFiles" DirectoryOptions="3"/>
+    <ROW Directory="AplikasiPegawaicache_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="APLIKA~1|Aplikasi Pegawai-cache" DirectoryOptions="3"/>
+    <ROW Directory="Jason_PekanUAS_Dir" Directory_Parent="APPDIR" DefaultDir="JASON_~1|Jason_PekanUAS" DirectoryOptions="3"/>
+    <ROW Directory="P13_1_Dir" Directory_Parent="src_Dir" DefaultDir="P13" DirectoryOptions="3"/>
+    <ROW Directory="P13_Dir" Directory_Parent="classes_Dir" DefaultDir="P13" DirectoryOptions="3"/>
+    <ROW Directory="P14_1_Dir" Directory_Parent="src_Dir" DefaultDir="P14" DirectoryOptions="3"/>
+    <ROW Directory="P14_Dir" Directory_Parent="classes_Dir" DefaultDir="P14" DirectoryOptions="3"/>
+    <ROW Directory="P15_1_Dir" Directory_Parent="src_Dir" DefaultDir="P15" DirectoryOptions="3"/>
+    <ROW Directory="P15_Dir" Directory_Parent="classes_Dir" DefaultDir="P15" DirectoryOptions="3"/>
+    <ROW Directory="P16_1_Dir" Directory_Parent="src_Dir" DefaultDir="P16" DirectoryOptions="3"/>
+    <ROW Directory="P16_Dir" Directory_Parent="classes_Dir" DefaultDir="P16" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="build_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="jason_pekanuas_1_Dir" Directory_Parent="src_Dir" DefaultDir="JASON_~1|jason_pekanuas" DirectoryOptions="3"/>
+    <ROW Directory="jason_pekanuas_Dir" Directory_Parent="classes_Dir" DefaultDir="JASON_~1|jason_pekanuas" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="part2_Dir" Directory_Parent="AplikasiPegawaicache_Dir" DefaultDir="part2" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="Jason_PekanUAS_Dir" DefaultDir="src" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{C7CAD016-3901-4044-A98C-9C98F63A77EE}"/>
+    <ROW Component="ProductInformation" Value="{3C6096EE-7528-49AB-A5A5-3CAE1A80E06C}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{C7CAD016-3901-4044-A98C-9C98F63A77EE}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AplikasiPegawai.msi" ComponentId="{3E9EE01D-19A7-40E1-B40E-AC24686DF1EF}" Directory_="AplikasiPegawaiSetupFiles_Dir" Attributes="0" KeyPath="AplikasiPegawai.msi" Type="0"/>
+    <ROW Component="DashboardAdmin.form" ComponentId="{00742159-B79A-4446-8ACF-FA7867528846}" Directory_="P14_1_Dir" Attributes="0" KeyPath="DashboardAdmin.form" Type="0"/>
+    <ROW Component="DashboardAdmin1.class" ComponentId="{B1494E75-014A-4C10-96B8-ABDCDADCDCFE}" Directory_="P14_Dir" Attributes="0" KeyPath="DashboardAdmin1.class" Type="0"/>
+    <ROW Component="DatabaseConnection.class" ComponentId="{F9D64654-B09F-46DD-ABB3-F559E21C83DE}" Directory_="P13_Dir" Attributes="0" KeyPath="DatabaseConnection.class" Type="0"/>
+    <ROW Component="DatabaseConnection.java" ComponentId="{74E5D113-FE6E-4267-938A-AA075820CA3D}" Directory_="P13_1_Dir" Attributes="0" KeyPath="DatabaseConnection.java" Type="0"/>
+    <ROW Component="Demo.exe" ComponentId="{65F83DA4-C1E7-4AD5-9C3B-6CCE1D59AD32}" Directory_="APPDIR" Attributes="0" KeyPath="Demo.exe"/>
+    <ROW Component="Form_Stok_Barang.form" ComponentId="{49CBA285-E401-43D4-9D23-6576B5368083}" Directory_="P15_1_Dir" Attributes="0" KeyPath="Form_Stok_Barang.form" Type="0"/>
+    <ROW Component="Form_Stok_Barang1.class" ComponentId="{6E376A8E-3767-4443-B189-BF1750531340}" Directory_="P15_Dir" Attributes="0" KeyPath="Form_Stok_Barang1.class" Type="0"/>
+    <ROW Component="Jason_PekanUAS.class" ComponentId="{A2999B0A-C8BD-463C-B08B-02CA65340C4E}" Directory_="jason_pekanuas_Dir" Attributes="0" KeyPath="Jason_PekanUAS.class" Type="0"/>
+    <ROW Component="Jason_PekanUAS.jar" ComponentId="{4DB02229-DC87-4FB2-8D05-0DB78EFE1DDD}" Directory_="dist_Dir" Attributes="0" KeyPath="Jason_PekanUAS.jar" Type="0"/>
+    <ROW Component="Jason_PekanUAS.java" ComponentId="{008EBF9B-9A15-4BC9-A102-4844C7A058C7}" Directory_="jason_pekanuas_1_Dir" Attributes="0" KeyPath="Jason_PekanUAS.java" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{3C6096EE-7528-49AB-A5A5-3CAE1A80E06C}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D1F42AAC-B862-48F2-ADEA-D4809BC6B080}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Supplier.form" ComponentId="{862FC4D6-AE56-42BF-AA70-ECD4EDE52D52}" Directory_="P16_1_Dir" Attributes="0" KeyPath="Supplier.form" Type="0"/>
+    <ROW Component="Supplier1.class" ComponentId="{B423F901-46B9-4424-AB95-C8D7BCDE4174}" Directory_="P16_Dir" Attributes="0" KeyPath="Supplier1.class" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{F0BBD510-0E06-4FB2-AB37-DA26AEB49D6E}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{80AB5186-C021-4321-8961-9824EC02A482}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="cacheIndex.txt" ComponentId="{45022118-2F90-4112-ADE9-1302919F8328}" Directory_="AplikasiPegawaicache_Dir" Attributes="0" KeyPath="cacheIndex.txt" Type="0"/>
+    <ROW Component="disk1.cab" ComponentId="{BBA64B55-4FB5-4FAC-B18E-49B1707DDA46}" Directory_="part2_Dir" Attributes="0" KeyPath="disk1.cab" Type="0"/>
+    <ROW Component="mysqlconnectorj9.3.0.jar" ComponentId="{B0FBECA2-1B0F-446F-8143-3088454AD7FE}" Directory_="lib_Dir" Attributes="0" KeyPath="mysqlconnectorj9.3.0.jar" Type="0"/>
+    <ROW Component="png" ComponentId="{9390863E-778B-4833-9D92-CF555B0AD2D9}" Directory_="Jason_PekanUAS_Dir" Attributes="0" KeyPath="png" Type="0"/>
+    <ROW Component="private.properties" ComponentId="{3B0B495F-3E36-4992-A856-612397B3D111}" Directory_="private_Dir" Attributes="0" KeyPath="private.properties" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="png" Component_="png" FileName="1.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="1.png" SelfReg="false"/>
+    <ROW File="png_1" Component_="png" FileName="2.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="2.png" SelfReg="false"/>
+    <ROW File="png_2" Component_="png" FileName="3.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="3.png" SelfReg="false"/>
+    <ROW File="png_3" Component_="png" FileName="4.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="4.png" SelfReg="false"/>
+    <ROW File="png_4" Component_="png" FileName="5.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="5.png" SelfReg="false"/>
+    <ROW File="png_5" Component_="png" FileName="6.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="6.png" SelfReg="false"/>
+    <ROW File="png_6" Component_="png" FileName="7.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="7.png" SelfReg="false"/>
+    <ROW File="cacheIndex.txt" Component_="cacheIndex.txt" FileName="CACHEI~1.TXT|cacheIndex.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Pegawai-cache\cacheIndex.txt" SelfReg="false"/>
+    <ROW File="disk1.cab" Component_="disk1.cab" FileName="disk1.cab" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Pegawai-cache\part2\disk1.cab" SelfReg="false"/>
+    <ROW File="outputinfo.ini" Component_="disk1.cab" FileName="OUTPUT~1.INI|output-info.ini" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Pegawai-cache\part2\output-info.ini" SelfReg="false"/>
+    <ROW File="AplikasiPegawai.msi" Component_="AplikasiPegawai.msi" FileName="APLIKA~1.MSI|Aplikasi Pegawai.msi" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Pegawai-SetupFiles\Aplikasi Pegawai.msi" SelfReg="false"/>
+    <ROW File="AplikasiPegawai.aip" Component_="png" FileName="APLIKA~1.AIP|Aplikasi Pegawai.aip" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Pegawai.aip" SelfReg="false"/>
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\built-jar.properties" SelfReg="false"/>
+    <ROW File="Jason_PekanUAS.class" Component_="Jason_PekanUAS.class" FileName="JASON_~1.CLA|Jason_PekanUAS.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\jason_pekanuas\Jason_PekanUAS.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class" Component_="DatabaseConnection.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="FormUser1.class" Component_="DatabaseConnection.class" FileName="FORMUS~1.CLA|FormUser$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$1.class" SelfReg="false"/>
+    <ROW File="FormUser10.class" Component_="DatabaseConnection.class" FileName="FORMUS~2.CLA|FormUser$10.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$10.class" SelfReg="false"/>
+    <ROW File="FormUser2.class" Component_="DatabaseConnection.class" FileName="FORMUS~3.CLA|FormUser$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$2.class" SelfReg="false"/>
+    <ROW File="FormUser3.class" Component_="DatabaseConnection.class" FileName="FORMUS~4.CLA|FormUser$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$3.class" SelfReg="false"/>
+    <ROW File="FormUser4.class" Component_="DatabaseConnection.class" FileName="FORMUS~5.CLA|FormUser$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$4.class" SelfReg="false"/>
+    <ROW File="FormUser5.class" Component_="DatabaseConnection.class" FileName="FORMUS~6.CLA|FormUser$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$5.class" SelfReg="false"/>
+    <ROW File="FormUser6.class" Component_="DatabaseConnection.class" FileName="FORMUS~7.CLA|FormUser$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$6.class" SelfReg="false"/>
+    <ROW File="FormUser7.class" Component_="DatabaseConnection.class" FileName="FORMUS~8.CLA|FormUser$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$7.class" SelfReg="false"/>
+    <ROW File="FormUser8.class" Component_="DatabaseConnection.class" FileName="FORMUS~9.CLA|FormUser$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$8.class" SelfReg="false"/>
+    <ROW File="FormUser9.class" Component_="DatabaseConnection.class" FileName="FORMU~10.CLA|FormUser$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser$9.class" SelfReg="false"/>
+    <ROW File="FormUser.class" Component_="DatabaseConnection.class" FileName="FORMU~11.CLA|FormUser.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\FormUser.class" SelfReg="false"/>
+    <ROW File="HashUtil.class" Component_="DatabaseConnection.class" FileName="HASHUT~1.CLA|HashUtil.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\HashUtil.class" SelfReg="false"/>
+    <ROW File="LoginForm1.class" Component_="DatabaseConnection.class" FileName="LOGINF~1.CLA|LoginForm$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\LoginForm$1.class" SelfReg="false"/>
+    <ROW File="LoginForm2.class" Component_="DatabaseConnection.class" FileName="LOGINF~2.CLA|LoginForm$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\LoginForm$2.class" SelfReg="false"/>
+    <ROW File="LoginForm.class" Component_="DatabaseConnection.class" FileName="LOGINF~3.CLA|LoginForm.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P13\LoginForm.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin1.class" Component_="DashboardAdmin1.class" FileName="DASHBO~1.CLA|DashboardAdmin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$1.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin2.class" Component_="DashboardAdmin1.class" FileName="DASHBO~2.CLA|DashboardAdmin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$2.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin3.class" Component_="DashboardAdmin1.class" FileName="DASHBO~3.CLA|DashboardAdmin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$3.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin4.class" Component_="DashboardAdmin1.class" FileName="DASHBO~4.CLA|DashboardAdmin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$4.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin5.class" Component_="DashboardAdmin1.class" FileName="DASHBO~5.CLA|DashboardAdmin$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$5.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin6.class" Component_="DashboardAdmin1.class" FileName="DASHBO~6.CLA|DashboardAdmin$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$6.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin7.class" Component_="DashboardAdmin1.class" FileName="DASHBO~7.CLA|DashboardAdmin$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin$7.class" SelfReg="false"/>
+    <ROW File="DashboardAdmin.class" Component_="DashboardAdmin1.class" FileName="DASHBO~8.CLA|DashboardAdmin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardAdmin.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai1.class" Component_="DashboardAdmin1.class" FileName="DASHBO~9.CLA|DashboardPegawai$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai$1.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai2.class" Component_="DashboardAdmin1.class" FileName="DASHB~10.CLA|DashboardPegawai$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai$2.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai3.class" Component_="DashboardAdmin1.class" FileName="DASHB~11.CLA|DashboardPegawai$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai$3.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai4.class" Component_="DashboardAdmin1.class" FileName="DASHB~12.CLA|DashboardPegawai$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai$4.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai5.class" Component_="DashboardAdmin1.class" FileName="DASHB~13.CLA|DashboardPegawai$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai$5.class" SelfReg="false"/>
+    <ROW File="DashboardPegawai.class" Component_="DashboardAdmin1.class" FileName="DASHB~14.CLA|DashboardPegawai.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DashboardPegawai.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class_1" Component_="DashboardAdmin1.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="FormPegawai1.class" Component_="DashboardAdmin1.class" FileName="FORMPE~1.CLA|FormPegawai$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$1.class" SelfReg="false"/>
+    <ROW File="FormPegawai2.class" Component_="DashboardAdmin1.class" FileName="FORMPE~2.CLA|FormPegawai$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$2.class" SelfReg="false"/>
+    <ROW File="FormPegawai3.class" Component_="DashboardAdmin1.class" FileName="FORMPE~3.CLA|FormPegawai$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$3.class" SelfReg="false"/>
+    <ROW File="FormPegawai4.class" Component_="DashboardAdmin1.class" FileName="FORMPE~4.CLA|FormPegawai$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$4.class" SelfReg="false"/>
+    <ROW File="FormPegawai5.class" Component_="DashboardAdmin1.class" FileName="FORMPE~5.CLA|FormPegawai$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$5.class" SelfReg="false"/>
+    <ROW File="FormPegawai6.class" Component_="DashboardAdmin1.class" FileName="FORMPE~6.CLA|FormPegawai$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$6.class" SelfReg="false"/>
+    <ROW File="FormPegawai7.class" Component_="DashboardAdmin1.class" FileName="FORMPE~7.CLA|FormPegawai$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai$7.class" SelfReg="false"/>
+    <ROW File="FormPegawai.class" Component_="DashboardAdmin1.class" FileName="FORMPE~8.CLA|FormPegawai.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P14\FormPegawai.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang1.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~1.CLA|Form_Stok_Barang$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$1.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang2.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~2.CLA|Form_Stok_Barang$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$2.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang3.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~3.CLA|Form_Stok_Barang$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$3.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang4.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~4.CLA|Form_Stok_Barang$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$4.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang5.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~5.CLA|Form_Stok_Barang$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$5.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang6.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~6.CLA|Form_Stok_Barang$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$6.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang7.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~7.CLA|Form_Stok_Barang$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$7.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang8.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~8.CLA|Form_Stok_Barang$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang$8.class" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang.class" Component_="Form_Stok_Barang1.class" FileName="FORM_S~9.CLA|Form_Stok_Barang.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P15\Form_Stok_Barang.class" SelfReg="false"/>
+    <ROW File="Supplier1.class" Component_="Supplier1.class" FileName="SUPPLI~1.CLA|Supplier$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$1.class" SelfReg="false"/>
+    <ROW File="Supplier2.class" Component_="Supplier1.class" FileName="SUPPLI~2.CLA|Supplier$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$2.class" SelfReg="false"/>
+    <ROW File="Supplier3.class" Component_="Supplier1.class" FileName="SUPPLI~3.CLA|Supplier$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$3.class" SelfReg="false"/>
+    <ROW File="Supplier4.class" Component_="Supplier1.class" FileName="SUPPLI~4.CLA|Supplier$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$4.class" SelfReg="false"/>
+    <ROW File="Supplier5.class" Component_="Supplier1.class" FileName="SUPPLI~5.CLA|Supplier$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$5.class" SelfReg="false"/>
+    <ROW File="Supplier6.class" Component_="Supplier1.class" FileName="SUPPLI~6.CLA|Supplier$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier$6.class" SelfReg="false"/>
+    <ROW File="Supplier.class" Component_="Supplier1.class" FileName="SUPPLI~7.CLA|Supplier.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Supplier.class" SelfReg="false"/>
+    <ROW File="Transaksi1.class" Component_="Supplier1.class" FileName="TRANSA~1.CLA|Transaksi$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$1.class" SelfReg="false"/>
+    <ROW File="Transaksi2.class" Component_="Supplier1.class" FileName="TRANSA~2.CLA|Transaksi$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$2.class" SelfReg="false"/>
+    <ROW File="Transaksi3.class" Component_="Supplier1.class" FileName="TRANSA~3.CLA|Transaksi$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$3.class" SelfReg="false"/>
+    <ROW File="Transaksi4.class" Component_="Supplier1.class" FileName="TRANSA~4.CLA|Transaksi$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$4.class" SelfReg="false"/>
+    <ROW File="Transaksi5.class" Component_="Supplier1.class" FileName="TRANSA~5.CLA|Transaksi$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$5.class" SelfReg="false"/>
+    <ROW File="Transaksi6.class" Component_="Supplier1.class" FileName="TRANSA~6.CLA|Transaksi$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$6.class" SelfReg="false"/>
+    <ROW File="Transaksi7.class" Component_="Supplier1.class" FileName="TRANSA~7.CLA|Transaksi$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$7.class" SelfReg="false"/>
+    <ROW File="Transaksi8.class" Component_="Supplier1.class" FileName="TRANSA~8.CLA|Transaksi$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$8.class" SelfReg="false"/>
+    <ROW File="Transaksi9.class" Component_="Supplier1.class" FileName="TRANSA~9.CLA|Transaksi$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi$9.class" SelfReg="false"/>
+    <ROW File="Transaksi.class" Component_="Supplier1.class" FileName="TRANS~10.CLA|Transaksi.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\P16\Transaksi.class" SelfReg="false"/>
+    <ROW File="build.xml" Component_="png" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build.xml" SelfReg="false"/>
+    <ROW File="Jason_PekanUAS.jar" Component_="Jason_PekanUAS.jar" FileName="JASON_~1.JAR|Jason_PekanUAS.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\Jason_PekanUAS.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar" Component_="mysqlconnectorj9.3.0.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\lib\mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="Jason_PekanUAS.jar" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\README.TXT" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="png" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="manifest.mf" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="private.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="private.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.xml" SelfReg="false"/>
+    <ROW File="Jason_PekanUAS.java" Component_="Jason_PekanUAS.java" FileName="JASON_~1.JAV|Jason_PekanUAS.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\jason_pekanuas\Jason_PekanUAS.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java" Component_="DatabaseConnection.java" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="FormUser.form" Component_="DatabaseConnection.java" FileName="FORMUS~1.FOR|FormUser.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\FormUser.form" SelfReg="false"/>
+    <ROW File="FormUser.java" Component_="DatabaseConnection.java" FileName="FORMUS~1.JAV|FormUser.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\FormUser.java" SelfReg="false"/>
+    <ROW File="HashUtil.java" Component_="DatabaseConnection.java" FileName="HASHUT~1.JAV|HashUtil.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\HashUtil.java" SelfReg="false"/>
+    <ROW File="LoginForm.form" Component_="DatabaseConnection.java" FileName="LOGINF~1.FOR|LoginForm.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\LoginForm.form" SelfReg="false"/>
+    <ROW File="LoginForm.java" Component_="DatabaseConnection.java" FileName="LOGINF~1.JAV|LoginForm.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P13\LoginForm.java" SelfReg="false"/>
+    <ROW File="DashboardAdmin.form" Component_="DashboardAdmin.form" FileName="DASHBO~1.FOR|DashboardAdmin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\DashboardAdmin.form" SelfReg="false"/>
+    <ROW File="DashboardAdmin.java" Component_="DashboardAdmin.form" FileName="DASHBO~1.JAV|DashboardAdmin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\DashboardAdmin.java" SelfReg="false"/>
+    <ROW File="DashboardPegawai.form" Component_="DashboardAdmin.form" FileName="DASHBO~2.FOR|DashboardPegawai.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\DashboardPegawai.form" SelfReg="false"/>
+    <ROW File="DashboardPegawai.java" Component_="DashboardAdmin.form" FileName="DASHBO~2.JAV|DashboardPegawai.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\DashboardPegawai.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java_1" Component_="DashboardAdmin.form" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="FormPegawai.form" Component_="DashboardAdmin.form" FileName="FORMPE~1.FOR|FormPegawai.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\FormPegawai.form" SelfReg="false"/>
+    <ROW File="FormPegawai.java" Component_="DashboardAdmin.form" FileName="FORMPE~1.JAV|FormPegawai.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P14\FormPegawai.java" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang.form" Component_="Form_Stok_Barang.form" FileName="FORM_S~1.FOR|Form_Stok_Barang.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P15\Form_Stok_Barang.form" SelfReg="false"/>
+    <ROW File="Form_Stok_Barang.java" Component_="Form_Stok_Barang.form" FileName="FORM_S~1.JAV|Form_Stok_Barang.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P15\Form_Stok_Barang.java" SelfReg="false"/>
+    <ROW File="Supplier.form" Component_="Supplier.form" FileName="SUPPLI~1.FOR|Supplier.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P16\Supplier.form" SelfReg="false"/>
+    <ROW File="Supplier.java" Component_="Supplier.form" FileName="SUPPLI~1.JAV|Supplier.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P16\Supplier.java" SelfReg="false"/>
+    <ROW File="Transaksi.form" Component_="Supplier.form" FileName="TRANSA~1.FOR|Transaksi.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P16\Transaksi.form" SelfReg="false"/>
+    <ROW File="Transaksi.java" Component_="Supplier.form" FileName="TRANSA~1.JAV|Transaksi.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\P16\Transaksi.java" SelfReg="false"/>
+    <ROW File="Demo.exe" Component_="Demo.exe" FileName="Demo.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="id" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_id.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="png"/>
+    <ROW Feature_="MainFeature" Component_="cacheIndex.txt"/>
+    <ROW Feature_="MainFeature" Component_="disk1.cab"/>
+    <ROW Feature_="MainFeature" Component_="AplikasiPegawai.msi"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="Jason_PekanUAS.class"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.class"/>
+    <ROW Feature_="MainFeature" Component_="DashboardAdmin1.class"/>
+    <ROW Feature_="MainFeature" Component_="Form_Stok_Barang1.class"/>
+    <ROW Feature_="MainFeature" Component_="Supplier1.class"/>
+    <ROW Feature_="MainFeature" Component_="Jason_PekanUAS.jar"/>
+    <ROW Feature_="MainFeature" Component_="mysqlconnectorj9.3.0.jar"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="private.properties"/>
+    <ROW Feature_="MainFeature" Component_="Jason_PekanUAS.java"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.java"/>
+    <ROW Feature_="MainFeature" Component_="DashboardAdmin.form"/>
+    <ROW Feature_="MainFeature" Component_="Form_Stok_Barang.form"/>
+    <ROW Feature_="MainFeature" Component_="Supplier.form"/>
+    <ROW Feature_="MainFeature" Component_="Demo.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="Demo.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="ClassPath" FileName="Demo.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[Jason_PekanUAS_Dir];[#mysqlconnectorj9.3.0.jar];" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="Demo.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="FailureCheck" FileName="Demo.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="MainClass" FileName="Demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="P13.LoginForm" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="Demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="Demo.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="Demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="Demo.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="Demo.exe" Launcher="Demo.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" IconPath="..\..\..\..\..\Users\Jazz\Pictures\logo-unpam-300x291.ico" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#Demo.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="2" Platform64="true" EmbJarPath="dist\Jason_PekanUAS.jar" HasEmbJar="EmbeddedJar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] tidak dapat diinstal di [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Demo" Directory_="SHORTCUTDIR" Name="Demo" Component_="Demo.exe" Target="[#Demo.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
