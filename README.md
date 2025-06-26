@@ -1,4 +1,4 @@
 # How to start
 ```
-System.out.print("Heello World");
+System.out.print("Hello World");
 ```
